@@ -17,14 +17,14 @@
     </div>
     <nav class="page-header main-nav">
       <ul class="main-nav-list">
-        <li class="main-nav-list__item main-nav-list__item--current">
-          <a href="#">Главная</a>
+        <li class="main-nav-list__item">
+          <a href="index.html">Главная</a>
         </li>
         <li class="main-nav-list__item">
           <a href="catalog.html">Каталог продукции</a>
         </li>
-        <li class="main-nav-list__item">
-          <a href="form.html">Подбор программы</a>
+        <li class="main-nav-list__item main-nav-list__item--current">
+          <a href="#">Подбор программы</a>
         </li>
       </ul>
     </nav>
@@ -57,18 +57,16 @@
             <legend class="visually-hidden">Выбор программы</legend>
             <ul class="filter__list">
               <li class="filter__item filter__radio">
-                <input class="filter__input filter__input-radio" type="radio" name="programm" value="slimming"
-                  id="filter-slimming" checked>
+                <input class="visually-hidden" type="radio" name="programm" value="slimming" id="filter-slimming"
+                  checked>
                 <label class="filter__label filter__label-radio" for="filter-slimming">Похудение</label>
               </li>
               <li class="filter__item filter__radio">
-                <input class="filter__input filter__input-radio" type="radio" name="programm" value="weight-gain"
-                  id="filter-weight-gain">
+                <input class="visually-hidden" type="radio" name="programm" value="weight-gain" id="filter-weight-gain">
                 <label class="filter__label filter__label-radio" for="filter-weight-gain">Набор массы</label>
               </li>
               <li class="filter__item filter__radio">
-                <input class="filter__input filter__input-radio" type="radio" name="programm" value="advice"
-                  id="filter-advice">
+                <input class="visually-hidden" type="radio" name="programm" value="advice" id="filter-advice">
                 <label class="filter__label filter__label-radio" for="filter-advice">Не знаю (Нужен ваш совет)</label>
               </li>
             </ul>
@@ -92,48 +90,47 @@
             <textarea class="input comment__text" name="comment" id="comment-field"
               rows="10">Расскажите обо всех повадках кота</textarea>
           </fieldset>
-          <fieldset class="filter">
-            <legend class="title filter__title">Дополнительно</legend>
-            <ul class="filter__list">
-              <li class="filter__item filter__checkbox">
-                <input class="filter__input filter__input-checkbox" type="checkbox" name="sweetener"
-                  id="filter-sweetener" checked>
-                <label class="filter__label filter__label-checkbox" for="filter-sweetener">сахарозаменитель</label>
+          <fieldset class="optional">
+            <legend class="title optional__title">Дополнительно</legend>
+            <ul class="optional__list">
+              <li class="optional__item optional__checkbox">
+                <input class="visually-hidden" type="checkbox" name="sweetener" id="optional-sweetener" checked>
+                <label class="optional__label optional__label-checkbox"
+                  for="optional-sweetener">сахарозаменитель</label>
               </li>
-              <li class="filter__item filter__checkbox">
-                <input class="filter__input filter__input-checkbox" type="checkbox" name="water" id="filter-water">
-                <label class="filter__label filter__label-checkbox" for="filter-water">питьевая вода</label>
+              <li class="optional__item optional__checkbox">
+                <input class="visually-hidden" type="checkbox" name="water" id="optional-water">
+                <label class="optional__label optional__label-checkbox" for="optional-water">питьевая вода</label>
               </li>
-              <li class="filter__item filter__checkbox">
-                <input class="filter__input filter__input-checkbox" type="checkbox" name="milk" id="filter-milk">
-                <label class="filter__label filter__label-checkbox" for="filter-milk">молоко</label>
+              <li class="optional__item optional__checkbox">
+                <input class="visually-hidden" type="checkbox" name="milk" id="optional-milk">
+                <label class="optional__label optional__label-checkbox" for="optional-milk">молоко</label>
               </li>
-              <li class="filter__item filter__checkbox">
-                <input class="filter__input filter__input-checkbox" type="checkbox" name="vitamins"
-                  id="filter-vitamins">
-                <label class="filter__label filter__label-checkbox" for="filter-vitamins">витамины</label>
+              <li class="optional__item optional__checkbox">
+                <input class="visually-hidden" type="checkbox" name="vitamins" id="optional-vitamins">
+                <label class="optional__label optional__label-checkbox" for="optional-vitamins">витамины</label>
               </li>
             </ul>
           </fieldset>
-          <input class="button form__button-submit" type="submit" value="Отправить заявку">
+          <button class="button form__button-submit" type="submit">Отправить заявку</button>
         </form>
         <small>
           * — Обязательные поля
         </small>
       </div>
     </section>
+    <section class="page-footer__contacts">
+      <h2 class="visually-hidden">Контакты</h2>
+      <p class="contacts__text">Приглашаем к сотрудничеству дилеров!</p>
+      <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+      <iframe class="contacts__map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002615!2d30.32085871544038!3d59.93871916905499!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1627282326753!5m2!1sru!2sru"
+        width="320" height="362" allowfullscreen="" loading="lazy" title="Офис компании по адресу ул. Большая
+          Конюшенная 19/8, Санкт-Петербург"></iframe>
+    </section>
   </main>
   <footer class="page-footer">
     <div class="page-footer__wrapper">
-      <section class="page-footer__contacts">
-        <h2 class="visually-hidden">Контакты</h2>
-        <p class="contacts__text">Приглашаем к сотрудничеству дилеров!</p>
-        <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
-        <iframe class="contacts__map"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002615!2d30.32085871544038!3d59.93871916905499!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1627282326753!5m2!1sru!2sru"
-          width="320" height="362" allowfullscreen="" loading="lazy" title="Офис компании по адресу ул. Большая
-          Конюшенная 19/8, Санкт-Петербург"></iframe>
-      </section>
       <a class="page-footer__logo" href="#">
         <img src="img/footer-logo.svg" width="128" height="24" alt="Кэт энерджи">
       </a>
@@ -155,7 +152,7 @@
       </div>
       <div class="page-footer__copyright copyright">
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" rel="noopener noreferrer">
-          <p class="copyright__link-company">HTML Academy</p>
+          HTML Academy
           <img class="copyright__link-logo" src="img/logo-html.svg" width="27" height="34" alt="Логотип HTML Academy">
         </a>
       </div>
