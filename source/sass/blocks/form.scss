@@ -1,0 +1,52 @@
+.form {
+  margin-bottom: 32px;
+}
+
+.form__wrapper {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.form__title {
+  font-size: 36px;
+  line-height: 36px;
+  padding-top: 27px;
+  padding-bottom: 37px;
+}
+
+.form__text {
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 39px;
+}
+
+.form__button-submit {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  width: 280px;
+  height: 40px;
+  border: none;
+  margin-bottom: 21px;
+}
+
+.form__required-fields {
+  font-family: "Arial", sans-serif;
+  line-height: 16px;
+  text-align: center;
+  display: block;
+}
+
+.input:hover {
+  border: 1px solid $special_grey;
+  box-sizing: border-box;
+}
+
+.input:focus {
+  border: 2px solid $special_dark-grey;
+  box-sizing: border-box;
+}
+
+.input:required:invalid:not(:placeholder-shown) {
+  border: 2px solid $status_error;
+}

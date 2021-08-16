@@ -1,0 +1,47 @@
+.personal-datа {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  border: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 24px;
+}
+
+.personal-datа__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+}
+
+.personal-data__label {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: $special_dark-grey;
+}
+
+.personal-data__input {
+  margin: 0;
+  padding: 0;
+  padding-left: 15px;
+  height: 45px;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: $special_dark-grey;
+  border: 1px solid $special_grey-3;
+  box-sizing: border-box;
+}
+
+.personal-data__input--name {
+  width: 229px;
+}
+
+.personal-data__input--weight {
+  width: 204px;
+}
+
+.personal-data__input--age {
+  width: 172px;
+}

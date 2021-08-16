@@ -1,0 +1,45 @@
+.promo {
+  color: $basic_white;
+  background-image:
+    url("../img/index-background-color.png"),
+    url("../img/index-background.png");
+  background-position: top center, top center;
+  background-repeat: no-repeat, no-repeat;
+  background-size: top center, top center;
+  margin-bottom: 22px;
+}
+
+.promo__wrapper {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.promo__title {
+  font-weight: inherit;
+  font-size: 36px;
+  line-height: 36px;
+  text-align: center;
+  padding-top: 27px;
+  padding-bottom: 25px;
+}
+
+.promo__slogan {
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+  padding-bottom: 29px;
+}
+
+.promo__image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3px;
+}
+
+.promo__link {
+  width: 192px;
+  padding: 7px 44px;
+}

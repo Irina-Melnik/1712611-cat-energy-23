@@ -1,0 +1,27 @@
+.special-promo {
+  margin-top: 35px;
+  margin-bottom: 35px;
+  background-image:
+    url("../img/catalog-background-color.png"),
+    url("../img/catalog-background.png");
+  background-position: top center, top center;
+  background-repeat: no-repeat, no-repeat;
+  background-size: top center, top center;
+  height: 290px;
+}
+
+.special-promo__wrapper {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.special-promo__text {
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  width: 161px;
+  padding-top: 187px;
+  text-align: center;
+  margin: 0 auto;
+  color: $basic_white;
+}

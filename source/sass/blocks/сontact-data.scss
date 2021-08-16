@@ -1,0 +1,49 @@
+.сontact-data {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  border: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 24px;
+}
+
+.сontact-data__title {
+  font-size: 24px;
+  line-height: 26px;
+  margin-bottom: 35px;
+}
+
+.сontact-data__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+}
+
+.сontact-data__label {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: $special_dark-grey;
+}
+
+.сontact-data__input {
+  margin: 0;
+  padding: 0;
+  padding-left: 15px;
+  height: 45px;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: $special_dark-grey;
+  border: 1px solid $special_grey;
+  box-sizing: border-box;
+}
+
+.сontact-data__input--email {
+  width: 219px;
+}
+
+.сontact-data__input--phone {
+  width: 204px;
+}

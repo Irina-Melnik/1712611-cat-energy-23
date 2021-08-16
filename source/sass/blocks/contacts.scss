@@ -1,0 +1,35 @@
+.contacts__inner-page {
+  background-color: $basic_grey;
+}
+
+.contacts__wrapper {
+  display: flex;
+  width: 280px;
+  margin: 0 auto;
+}
+
+.contacts__text {
+  color: $special_dark-grey-3;
+  margin: 0;
+  margin-top: 28px;
+  margin-bottom: 26px;
+  width: 140px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.contacts__address {
+  font-family: "Arial", sans-serif;
+  color: $special_dark-grey;
+  font-style: normal;
+  margin-top: 28px;
+  margin-bottom: 26px;
+  font-size: 14px;
+  line-height: 20px;
+  width: 140px;
+}
+
+.contacts__map {
+  display: block;
+  margin: 0 auto;
+}

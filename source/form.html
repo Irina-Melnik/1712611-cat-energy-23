@@ -3,7 +3,9 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Функциональное питание для котов "Кэт энерджи"</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
@@ -16,14 +18,14 @@
       <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
     </div>
     <nav class="page-header main-nav">
-      <ul class="main-nav-list">
-        <li class="main-nav-list__item">
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
           <a href="index.html">Главная</a>
         </li>
-        <li class="main-nav-list__item">
+        <li class="main-nav__item">
           <a href="catalog.html">Каталог продукции</a>
         </li>
-        <li class="main-nav-list__item main-nav-list__item--current">
+        <li class="main-nav__item main-nav__item--current">
           <a href="#">Подбор программы</a>
         </li>
       </ul>
@@ -41,16 +43,18 @@
             <legend class="visually-hidden">Персональные данные</legend>
             <p class="personal-datа__item">
               <label class="label personal-data__label" for="name">Имя:*</label>
-              <input class="input personal-data__input" type="text" id="name" name="name" placeholder="Барсик" autofocus
-                required>
+              <input class="input personal-data__input personal-data__input--name" type="text" id="name" name="name"
+                placeholder="Барсик" autofocus required>
             </p>
             <p class="personal-datа__item">
               <label class="label personal-data__label" for="weight">Вес (кг):*</label>
-              <input class="input personal-data__input" type="text" id="weight" name="weight" placeholder="7" required>
+              <input class="input personal-data__input personal-data__input--weight" type="number" id="weight"
+                name="weight" placeholder="7" min="1" max="20" required>
             </p>
             <p class="personal-datа__item">
               <label class="label personal-data__label" for="age">Возраст (лет):</label>
-              <input class="input personal-data__input" type="text" id="age" name="age" placeholder="7">
+              <input class="input personal-data__input personal-data__input--age" type="number" id="age" name="age"
+                placeholder="7" min="1">
             </p>
           </fieldset>
           <fieldset class="filter">
@@ -76,13 +80,13 @@
               (владельца кота)</legend>
             <p class="сontact-data__item">
               <label class="label сontact-data__label" for="email">E-mail:*</label>
-              <input class="input сontact-data__input" type="email" id="email" name="email"
+              <input class="input сontact-data__input сontact-data__input--email" type="email" id="email" name="email"
                 placeholder="kuklachev@gmail.com" required>
             </p>
             <p class="сontact-data__item">
               <label class="label сontact-data__label" for="phone">Телефон:*</label>
-              <input class="input сontact-data__input" id="phone" type="tel" name="phone"
-                placeholder="8 (960) 900-60-90" required>
+              <input class="input сontact-data__input сontact-data__input--phone" id="phone" type="tel" name="phone"
+                placeholder="8 (960) 900-60-90" pattern="[0-9]{1} \([0-9]{3}\) [0-9]{3}-[0-9]{2}-[0-9]{2}" required>
             </p>
           </fieldset>
           <fieldset class="comment">
@@ -112,17 +116,19 @@
               </li>
             </ul>
           </fieldset>
-          <button class="button form__button-submit" type="submit">Отправить заявку</button>
+          <button class="button-green form__button-submit" type="submit">Отправить заявку</button>
         </form>
-        <small>
+        <small class="form__required-fields">
           * — Обязательные поля
         </small>
       </div>
     </section>
-    <section class="page-footer__contacts">
-      <h2 class="visually-hidden">Контакты</h2>
-      <p class="contacts__text">Приглашаем к сотрудничеству дилеров!</p>
-      <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+    <section class="contacts contacts__inner-page">
+      <div class="contacts__wrapper">
+        <h2 class="visually-hidden">Контакты</h2>
+        <p class="contacts__text">Приглашаем к сотрудничеству дилеров!</p>
+        <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+      </div>
       <iframe class="contacts__map"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002615!2d30.32085871544038!3d59.93871916905499!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1627282326753!5m2!1sru!2sru"
         width="320" height="362" allowfullscreen="" loading="lazy" title="Офис компании по адресу ул. Большая
@@ -137,16 +143,16 @@
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy"
-              rel="noopener noreferrer">Мы в Вконтакте</a>
+            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy" rel="noopener noreferrer"
+              aria-label="Мы в Вконтакте">Мы в Вконтакте</a>
           </li>
           <li class="social__item">
             <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy"
-              rel="noopener noreferrer">Мы в Инстаграме</a>
+              rel="noopener noreferrer" aria-label="Мы в Инстаграме">Мы в Инстаграме</a>
           </li>
           <li class="social__item">
             <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"
-              rel="noopener noreferrer">Мы в Фейсбуке</a>
+              rel="noopener noreferrer" aria-label="Мы в Фейсбуке">Мы в Фейсбуке</a>
           </li>
         </ul>
       </div>

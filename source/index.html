@@ -3,7 +3,9 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Функциональное питание для котов "Кэт энерджи"</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
@@ -13,17 +15,17 @@
         <img class="page-header__logo-image" src="img/logo-mobile.svg" width="33" height="37" alt="Логотип Кэт энерджи">
         <img class="page-header__logo-text" src="img/logo-mobile-text.svg" width="101" height="18" alt="Кэт энерджи">
       </a>
-      <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
+      <button class="page-header__toggle" type="button" aria-label="Открыть меню"></button>
     </div>
-    <nav class="page-header main-nav">
-      <ul class="main-nav-list">
-        <li class="main-nav-list__item main-nav-list__item--current">
+    <nav class="page-header__nav main-nav">
+      <ul class="main-nav__list">
+        <li class="main-nav__item main-nav__item--current">
           <a href="#">Главная</a>
         </li>
-        <li class="main-nav-list__item">
+        <li class="main-nav__item">
           <a href="catalog.html">Каталог продукции</a>
         </li>
-        <li class="main-nav-list__item">
+        <li class="main-nav__item">
           <a href="form.html">Подбор программы</a>
         </li>
       </ul>
@@ -37,7 +39,7 @@
         <p class="promo__slogan">Занялся собой? Займись котом!</p>
         <img class="promo__image" src="img/index-can-mobile.png" width="280" height="270"
           alt="Упаковка кошачьего корма из курицы">
-        <a class="promo__link" href="form.html">Подобрать программу</a>
+        <a class="button-green promo__link" href="form.html">Подобрать программу</a>
       </div>
     </section>
     <section class="programm">
@@ -109,10 +111,10 @@
         </dl>
         <p class="example__costs">Затраты на питание: <span>15 000</span> руб.</p>
         <ul class="example__changes-list slider-list">
-          <li class="example__changes-item slider-item">
+          <li class="example__changes-item slider-item slide-current">
             <img class="example__changes-image" src="img/cat-fat.png" width="311" height="232" alt="Мягкий пухлый кот">
           </li>
-          <li class="example__changes-item slider-item">
+          <li class="example__changes-item slider-item" style="display: none;">
             <img class="example__changes-image" src="img/cat-skinny.png" width="311" height="232" alt="Худой кот">
           </li>
         </ul>
@@ -123,10 +125,12 @@
         </p>
       </div>
     </section>
-    <section class="page-footer__contacts">
-      <h2 class="visually-hidden">Контакты</h2>
-      <p class="contacts__text">Приглашаем к сотрудничеству дилеров!</p>
-      <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+    <section class="contacts">
+      <div class="contacts__wrapper">
+        <h2 class="visually-hidden">Контакты</h2>
+        <p class="contacts__text">Приглашаем к&nbspсотрудничеству дилеров!</p>
+        <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+      </div>
       <iframe class="contacts__map"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002615!2d30.32085871544038!3d59.93871916905499!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1627282326753!5m2!1sru!2sru"
         width="320" height="362" allowfullscreen="" loading="lazy" title="Офис компании по адресу ул. Большая
@@ -142,15 +146,15 @@
         <ul class="social__list">
           <li class="social__item">
             <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy"
-              rel="noopener noreferrer">Мы в Вконтакте</a>
+              rel="noopener noreferrer" aria-label="Мы в Вконтакте">Мы в Вконтакте</a>
           </li>
           <li class="social__item">
             <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy"
-              rel="noopener noreferrer">Мы в Инстаграме</a>
+              rel="noopener noreferrer" aria-label="Мы в Инстаграме">Мы в Инстаграме</a>
           </li>
           <li class="social__item">
             <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"
-              rel="noopener noreferrer">Мы в Фейсбуке</a>
+              rel="noopener noreferrer" aria-label="Мы в Фейсбуке">Мы в Фейсбуке</a>
           </li>
         </ul>
       </div>
