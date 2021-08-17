@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 .page {
   height: 100%;
   font-size: 14px;
@@ -28,6 +32,7 @@ a {
 
 .button-green {
   display: inline-block;
+  width: 100%;
   color: $basic_white;
   text-align: center;
   text-transform: uppercase;

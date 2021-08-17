@@ -13,20 +13,22 @@
     <div class="page-header__logo">
       <a class="page-header__logo-link" href="#">
         <img class="page-header__logo-image" src="img/logo-mobile.svg" width="33" height="37" alt="Логотип Кэт энерджи">
+      </a>
+      <a class="page-header__logo-link" href="#">
         <img class="page-header__logo-text" src="img/logo-mobile-text.svg" width="101" height="18" alt="Кэт энерджи">
       </a>
-      <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
+      <button class="main-nav__toggle" type="button" aria-label="Открыть меню">x</button>
     </div>
     <nav class="page-header main-nav">
       <ul class="main-nav__list">
         <li class="main-nav__item">
-          <a href="index.html">Главная</a>
+          <a href="index.html"><span>Главная</span></a>
         </li>
         <li class="main-nav__item">
-          <a href="catalog.html">Каталог продукции</a>
+          <a href="catalog.html"><span>Каталог продукции</span></a>
         </li>
         <li class="main-nav__item main-nav__item--current">
-          <a href="#">Подбор программы</a>
+          <a href="#"><span>Подбор программы</span></a>
         </li>
       </ul>
     </nav>
@@ -47,12 +49,12 @@
                 placeholder="Барсик" autofocus required>
             </p>
             <p class="personal-datа__item">
-              <label class="label personal-data__label" for="weight">Вес (кг):*</label>
+              <label class="label personal-data__label" for="weight">Вес&nbsp(кг):*</label>
               <input class="input personal-data__input personal-data__input--weight" type="number" id="weight"
                 name="weight" placeholder="7" min="1" max="20" required>
             </p>
             <p class="personal-datа__item">
-              <label class="label personal-data__label" for="age">Возраст (лет):</label>
+              <label class="label personal-data__label" for="age">Возраст&nbsp(лет):</label>
               <input class="input personal-data__input personal-data__input--age" type="number" id="age" name="age"
                 placeholder="7" min="1">
             </p>
@@ -79,7 +81,7 @@
             <legend class="title сontact-data__title">Контактные данные
               (владельца кота)</legend>
             <p class="сontact-data__item">
-              <label class="label сontact-data__label" for="email">E-mail:*</label>
+              <label class="label сontact-data__label" for="email">E-&nbspmail:*</label>
               <input class="input сontact-data__input сontact-data__input--email" type="email" id="email" name="email"
                 placeholder="kuklachev@gmail.com" required>
             </p>

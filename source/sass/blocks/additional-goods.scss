@@ -3,8 +3,13 @@
 }
 
 .additional-goods__wrapper {
-  width: 280px;
-  margin: 0 auto;
+  max-width: calc(#{$tablet-width} - 1px);
+  width: 100%;
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .additional-goods__title {
@@ -55,6 +60,6 @@
 .additional-goods__order {
   font-size: 16px;
   line-height: 20px;
-  width: 62px;
-  padding: 10px 109px;
+  width: 100%;
+  padding: 10px 0;
 }

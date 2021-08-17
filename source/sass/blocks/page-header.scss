@@ -1,7 +1,7 @@
 .page-header {
   display: flex;
   flex-direction: column;
-  max-width: calc($tablet-width - 1);
+  max-width: calc(#{$tablet-width} - 1px);
   width: 100%;
   margin-top: 0;
   margin-left: auto;
@@ -14,15 +14,11 @@
 
 .page-header__logo {
   display: flex;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
   height: 65px;
 }
-
-// .page-header__logo-link {
-//   display: flex;
-//   align-items: center;
-// }
 
 .page-header__logo-link:hover img {
   opacity: 0.8;

@@ -1,18 +1,23 @@
 .special-promo {
+  max-width: calc(#{$tablet-width} - 1px);
+  width: 100%;
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
   margin-top: 35px;
   margin-bottom: 35px;
-  background-image:
-    url("../img/catalog-background-color.png"),
-    url("../img/catalog-background.png");
-  background-position: top center, top center;
-  background-repeat: no-repeat, no-repeat;
-  background-size: top center, top center;
-  height: 290px;
+
 }
 
 .special-promo__wrapper {
-  width: 280px;
-  margin: 0 auto;
+  background-image:
+    url("../img/catalog-background-color.png"),
+    url("../img/catalog-background.png");
+  background-position: center center, center center;
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover, cover;
 }
 
 .special-promo__text {
@@ -21,6 +26,7 @@
   line-height: 20px;
   width: 161px;
   padding-top: 187px;
+  padding-bottom: 43px;
   text-align: center;
   margin: 0 auto;
   color: $basic_white;

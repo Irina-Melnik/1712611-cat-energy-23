@@ -5,13 +5,18 @@
     url("../img/index-background.png");
   background-position: top center, top center;
   background-repeat: no-repeat, no-repeat;
-  background-size: top center, top center;
+  background-size: 100%, 100%;
   margin-bottom: 22px;
 }
 
 .promo__wrapper {
-  width: 280px;
-  margin: 0 auto;
+  max-width: calc(#{$tablet-width} - 1px);
+  width: 100%;
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .promo__title {
@@ -19,6 +24,7 @@
   font-size: 36px;
   line-height: 36px;
   text-align: center;
+  margin: 0;
   padding-top: 27px;
   padding-bottom: 25px;
 }
@@ -40,6 +46,6 @@
 }
 
 .promo__link {
-  width: 192px;
-  padding: 7px 44px;
+  padding-top: 7px;
+  padding-bottom: 7px;
 }
