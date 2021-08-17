@@ -1,24 +1,28 @@
 .page-header {
   display: flex;
   flex-direction: column;
-  width: 280px;
-  margin: 0 auto;
+  max-width: calc($tablet-width - 1);
+  width: 100%;
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
   background-color: $basic_white;
   color: $basic_black;
 }
 
 .page-header__logo {
   display: flex;
-  flex: 2 1;
   justify-content: space-between;
   align-items: center;
   height: 65px;
 }
 
-.page-header__logo-link {
-  display: flex;
-  align-items: center;
-}
+// .page-header__logo-link {
+//   display: flex;
+//   align-items: center;
+// }
 
 .page-header__logo-link:hover img {
   opacity: 0.8;
@@ -29,7 +33,6 @@
 }
 
 .page-header__logo-image {
-  margin-right: 57px;
   margin-top: 10px;
   margin-bottom: 17px;
 }
