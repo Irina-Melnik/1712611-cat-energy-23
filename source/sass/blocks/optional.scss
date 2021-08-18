@@ -1,0 +1,27 @@
+.optional {
+  border: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 41px;
+}
+
+.optional__title {
+  font-size: 24px;
+  line-height: 26px;
+  margin-bottom: 39px;
+}
+
+.optional__list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.optional__label {
+  margin-left: 46px;
+  font-size: 16px;
+  text-transform: uppercase;
+}

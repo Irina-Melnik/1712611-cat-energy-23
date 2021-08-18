@@ -1,0 +1,51 @@
+.promo {
+  color: $basic_white;
+  background-image:
+    url("../img/index-background-color.png"),
+    url("../img/index-background.png");
+  background-position: top center, top center;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 100%, 100%;
+  margin-bottom: 22px;
+}
+
+.promo__wrapper {
+  max-width: calc(#{$tablet-width} - 1px);
+  width: 100%;
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.promo__title {
+  font-weight: inherit;
+  font-size: 36px;
+  line-height: 36px;
+  text-align: center;
+  margin: 0;
+  padding-top: 27px;
+  padding-bottom: 25px;
+}
+
+.promo__slogan {
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+  padding-bottom: 29px;
+}
+
+.promo__image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3px;
+}
+
+.promo__link {
+  padding-top: 7px;
+  padding-bottom: 7px;
+}

@@ -1,0 +1,41 @@
+.contacts__inner-page {
+  background-color: $basic_grey;
+}
+
+.contacts__wrapper {
+  display: flex;
+  justify-content: space-between;
+  max-width: calc(#{$tablet-width} - 1px);
+  width: 100%;
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.contacts__text {
+  color: $special_dark-grey-3;
+  margin: 0;
+  margin-top: 28px;
+  margin-bottom: 26px;
+  width: 140px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.contacts__address {
+  font-family: "Arial", sans-serif;
+  color: $special_dark-grey;
+  font-style: normal;
+  margin-top: 28px;
+  margin-bottom: 26px;
+  font-size: 14px;
+  line-height: 20px;
+  width: 140px;
+}
+
+.contacts__map {
+  display: block;
+  width: 100%;
+}
