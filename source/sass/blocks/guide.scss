@@ -40,3 +40,51 @@
   margin-left: 80px;
   line-height: 18px;
 }
+
+@media (min-width: $tablet-width) {
+  .guide {
+    margin-bottom: 10px;
+  }
+
+  .guide__wrapper {
+    max-width: calc(#{$desktop-width} - 1px);
+    width: 100%;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .guide__title {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 32px;
+  }
+
+  .guide__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .guide__list li {
+    width: 45%;
+    min-width: 324px;
+  }
+
+  .guide__item,
+  .guide__item:last-child {
+    margin-bottom: 37px;
+  }
+
+  .guide__description {
+    font-family: "Arial", sans-serif;
+    margin: 0;
+    margin-top: 151px;
+    margin-bottom: 57px;
+    line-height: 24px;
+    width: 80%;
+  }
+}

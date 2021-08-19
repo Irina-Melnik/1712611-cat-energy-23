@@ -11,24 +11,28 @@
 <body class="page__body">
   <header class="page-header">
     <div class="page-header__logo">
-      <a class="page-header__logo-link" href="#">
+      <a class="page-header__logo-link page-header__logo-link--mobile" href="#">
         <img class="page-header__logo-image" src="img/logo-mobile.svg" width="33" height="37" alt="Логотип Кэт энерджи">
       </a>
-      <a class="page-header__logo-link" href="#">
+      <a class="page-header__logo-link page-header__logo-link--mobile" href="#">
         <img class="page-header__logo-text" src="img/logo-mobile-text.svg" width="101" height="18" alt="Кэт энерджи">
+      </a>
+      <a class="page-header__logo-link page-header__logo-link--tablet" href="#">
+        <img class="page-header__logo-image" src="img/logo-tablet.svg" width="174" height="52"
+          alt="Логотип Кэт энерджи">
       </a>
       <button class="page-header__toggle" type="button" aria-label="Открыть меню">x</button>
     </div>
     <nav class="page-header__nav main-nav">
       <ul class="main-nav__list">
         <li class="main-nav__item main-nav__item--current">
-          <a href="#"><span>Главная</span></a>
+          <a href="#">Главная</a>
         </li>
         <li class="main-nav__item">
-          <a href="catalog.html"><span>Каталог продукции</span></a>
+          <a href="catalog.html">Каталог продукции</a>
         </li>
         <li class="main-nav__item">
-          <a href="form.html"><span>Подбор программы</span></a>
+          <a href="form.html">Подбор программы</a>
         </li>
       </ul>
     </nav>
@@ -37,9 +41,11 @@
     <h1 class="visually-hidden">Cat Energy - функциональное питание для котов</h1>
     <section class="promo">
       <div class="promo__wrapper">
-        <h2 class="title promo__title">Функциональное питание для котов</h2>
+        <h2 class="title promo__title">Функциональное питание&nbspдля&nbspкотов</h2>
         <p class="promo__slogan">Занялся собой? Займись котом!</p>
-        <img class="promo__image" src="img/index-can-mobile.png" width="280" height="270"
+        <img class="promo__image promo__image--mobile" src="img/index-can-mobile.png" width="280" height="270"
+          alt="Упаковка кошачьего корма из курицы">
+        <img class="promo__image promo__image--tablet" src="img/index-can-tablet.png" width="709" height="609"
           alt="Упаковка кошачьего корма из курицы">
         <a class="button-green promo__link" href="form.html">Подобрать программу</a>
       </div>
@@ -59,7 +65,8 @@
           <li class="programm__item">
             <h3 class="title programm__title">Набор массы</h3>
             <p class="programm__description">
-              Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить
+              Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту
+              нарастить
               необходимые мышцы!
             </p>
             <a class="programm__link" href="form.html">Каталог pro</a>
@@ -90,28 +97,32 @@
       <div class="example__wrapper slider">
         <h2 class="title example__title">Живой пример</h2>
         <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
-          Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по
+          Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и
+          по-прежнему
+          спит по
           16 часов в день.
         </p>
-        <dl class="example__list">
-          <div class="example__item">
-            <dt class="example__number">
-              5 кг
-            </dt>
-            <dd class="example__description">
-              снижение веса
-            </dd>
-          </div>
-          <div class="example__item">
-            <dt class="example__number">
-              60 дней
-            </dt>
-            <dd class="example__description">
-              затрачено времени
-            </dd>
-          </div>
-        </dl>
-        <p class="example__costs">Затраты на питание: <span>15 000</span> руб.</p>
+        <div class="example__stats">
+          <dl class="example__list">
+            <div class="example__item">
+              <dt class="example__number">
+                5 кг
+              </dt>
+              <dd class="example__description">
+                снижение веса
+              </dd>
+            </div>
+            <div class="example__item">
+              <dt class="example__number">
+                60 дней
+              </dt>
+              <dd class="example__description">
+                затрачено времени
+              </dd>
+            </div>
+          </dl>
+          <p class="example__costs">Затраты на питание: <span>15&nbsp000</span>&nbspруб.</p>
+        </div>
         <ul class="example__changes-list slider-list">
           <li class="example__changes-item slider-item slide-current">
             <img class="example__changes-image" src="img/cat-fat.png" width="311" height="232" alt="Мягкий пухлый кот">
@@ -148,15 +159,15 @@
         <ul class="social__list">
           <li class="social__item">
             <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy" rel="noopener noreferrer"
-              aria-label="Мы в Вконтакте"></a>
+              aria-label="Мы в Вконтакте">VK</a>
           </li>
           <li class="social__item">
             <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy"
-              rel="noopener noreferrer" aria-label="Мы в Инстаграме"></a>
+              rel="noopener noreferrer" aria-label="Мы в Инстаграме">Inst</a>
           </li>
           <li class="social__item">
             <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"
-              rel="noopener noreferrer" aria-label="Мы в Фейсбуке"></a>
+              rel="noopener noreferrer" aria-label="Мы в Фейсбуке">F</a>
           </li>
         </ul>
       </div>

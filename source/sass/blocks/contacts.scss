@@ -38,4 +38,36 @@
 .contacts__map {
   display: block;
   width: 100%;
+  border: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts__wrapper {
+    max-width: calc(#{$desktop-width} - 1px);
+    width: 100%;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .contacts__text {
+    margin-top: 66px;
+    margin-bottom: 58px;
+    margin-left: 41px;
+    width: 171px;
+    font-size: 20px;
+    line-height: 21px;
+  }
+
+  .contacts__address {
+    margin-top: 62px;
+    margin-bottom: 58px;
+    margin-right: 42px;
+    font-size: 16px;
+    line-height: 20px;
+    width: 160px;
+    text-align: end;
+  }
 }
